@@ -6,6 +6,12 @@
   <meta name="author" content="Manu">
   <title>GreatCodeSystem</title>
 
+  <!-- Compiled and minified CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
+  <!-- Compiled and minified JavaScript -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
   <link rel="stylesheet" type="text/css" href="css/main.css">
   <link rel="stylesheet" type="text/css" href="css/footer.css">
   <link rel="stylesheet" type="text/css" href="css/projects.css">
@@ -15,91 +21,159 @@
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
 </head>
 <body>
-  <div class="main_container">
-    <nav>
-      <a href="index.html">Home</a>
-      <a href="projects.html">Projects</a>
-      <a href="contact.html">Contact</a>
-    </nav>
+  <div class="container">
+    <div class="main_container">
+      <nav>
+        <div class="nav-wrapper">
+          <a href="#" data-target="mobile-demo" class="sidenav-trigger">
+            <i class="material-icons">menu</i>
+          </a>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
 
-    <h1>Our work</h1>
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in</p>
+      <ul class="sidenav" id="mobile-demo">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
 
-    <section class="product_cards_container">
-      <div class="product_card">
-        <div class="image">
-          <img src="assets/tesla.webp" alt="Tesla Project">
-        </div>
-        <div class="title">
-          Tesla presentation website
-        </div>
-      </div>
+      <h1>Our work</h1>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in</p>
 
-      <div class="product_card">
-        <div class="image">
-          <img src="assets/microsoft.jpeg" alt="Microsoft Project">
+      <section class="row product_cards_container">
+        <div class="card col l4 m6 s12 product_card">
+          <div class="card-image waves-effect waves-block waves-light">
+           <img class="activator" src="assets/tesla.webp">
+          </div>
+          <div class="card-content">
+             <span class="card-title activator grey-text text-darken-4">Tesla presentation website</span>
+          </div>
+          <div class="card-reveal">
+             <span class="card-title grey-text text-darken-4">Tesla presentation website</span>
+             <p>Here is some more information about this product that is only revealed once clicked on.</p>
+          </div>
         </div>
-        <div class="title">
-          Web interface for Microsoft's Skype
-        </div>
-      </div>
 
-      <div class="product_card">
-        <div class="image">
-          <img src="assets/sda.jpg" alt="Software development academy">
+        <div class="card col l4 m6 s12 product_card">
+          <div class="card-image waves-effect waves-block waves-light">
+           <img class="activator" src="assets/microsoft.jpeg">
+          </div>
+          <div class="card-content">
+             <span class="card-title activator grey-text text-darken-4">Web interface for Microsoft's Skype</span>
+          </div>
+          <div class="card-reveal">
+             <span class="card-title grey-text text-darken-4">Web interface for Microsoft's Skype</span>
+             <p>Here is some more information about this product that is only revealed once clicked on.</p>
+          </div>
         </div>
-        <div class="title">
-          SDA classes scheduler
-        </div>
-      </div>
 
-      <div class="product_card">
-        <div class="image">
-          <img src="assets/dog.jpg" alt="Dog shelter">
+        <div class="card col l4 m6 s12 product_card">
+          <div class="card-image waves-effect waves-block waves-light">
+           <img class="activator" src="assets/sda.jpg">
+          </div>
+          <div class="card-content">
+             <span class="card-title activator grey-text text-darken-4">SDA classes scheduler</span>
+          </div>
+          <div class="card-reveal">
+             <span class="card-title grey-text text-darken-4">SDA classes scheduler</span>
+             <p>Here is some more information about this product that is only revealed once clicked on.</p>
+          </div>
         </div>
-        <div class="title">
-          Take me home! Dog shelter scheduler
-        </div>
-      </div>
 
-      <div class="product_card">
-        <div class="image">
-          <img src="assets/herbal.jpeg" alt="Herbal">
-        </div>
-        <div class="title">
-          Homemade herbal tea
-        </div>
-      </div>
 
-      <div class="product_card">
-        <div class="image">
-          <img src="assets/idea.png" alt="Have an idea?">
+        <div class="card col l4 m6 s12 product_card">
+          <div class="card-image waves-effect waves-block waves-light">
+           <img class="activator" src="assets/dog.jpg">
+          </div>
+          <div class="card-content">
+             <span class="card-title activator grey-text text-darken-4">Take me home! Dog shelter scheduler</span>
+          </div>
+          <div class="card-reveal">
+             <span class="card-title grey-text text-darken-4">Take me home! Dog shelter scheduler</span>
+             <p>Here is some more information about this product that is only revealed once clicked on.</p>
+          </div>
         </div>
-        <div class="title">
-          Have an idea? Let's talk!
-        </div>
-      </div>
-    </section>
 
-    <section class="default_form">
-      <p>
-        We would like to hear about your idea. Each detail is useful, but some fields below are mandatory :).
-      </p>
-      <form class="" action="" method="post">
-        <input type="text" name="user_name" placeholder="Your name *">
-        <input type="text" name="user_email" placeholder="Your email *">
-        <input type="text" name="user_phone" placeholder="Your phone">
-        <textarea name="message" placeholder="Tell us about your idea *"></textarea>
-
-        <div class="actions">
-          <input type="checkbox" name="gdpr_check" value="">
-          <label for="gdpr_check">I gree to GDPR stuff</label>
-          <input class="pull-right" type="submit" name="" value="Send">
+        <div class="card col l4 m6 s12 product_card">
+          <div class="card-image waves-effect waves-block waves-light">
+           <img class="activator" src="assets/herbal.jpeg">
+          </div>
+          <div class="card-content">
+             <span class="card-title activator grey-text text-darken-4">Homemade herbal tea </span>
+          </div>
+          <div class="card-reveal">
+             <span class="card-title grey-text text-darken-4">Homemade herbal tea</span>
+             <p>Here is some more information about this product that is only revealed once clicked on.</p>
+          </div>
         </div>
-      </form>
-    </section>
+
+        <div class="card col l4 m6 s12 product_card">
+          <div class="card-image waves-effect waves-block waves-light">
+           <img class="activator" src="assets/idea.png">
+          </div>
+          <div class="card-content">
+             <span class="card-title activator grey-text text-darken-4">Homemade herbal tea </span>
+          </div>
+          <div class="card-reveal">
+             <span class="card-title grey-text text-darken-4">Homemade herbal tea</span>
+             <p>Here is some more information about this product that is only revealed once clicked on.</p>
+          </div>
+        </div>
+
+        <div class="row">
+          <section class="default_form">
+            <p class="row">
+              We would like to hear about your idea. Each detail is useful, but some fields below are mandatory :).
+            </p>
+            <form class="" action="" method="post">
+              <div class="row">
+                <div class="input-field col l8 offset-l2">
+                  <input class="autocomplete" type="text" name="user_name" id="user_name">
+                  <label for="user_name">Your name *</label>
+                </div>
+              </div>
+              <div class="row">
+                <div class="input-field col l8 offset-l2">
+                  <input class="autocomplete" type="text" name="user_email" id="user_email">
+                  <label for="user_email">Your email *</label>
+                </div>
+              </div>
+              <div class="row">
+                <div class="input-field col l8 offset-l2">
+                  <input class="autocomplete" type="text" name="user_phone" id="user_phone">
+                  <label for="user_phone">Your phone number *</label>
+                </div>
+              </div>
+              <div class="row">
+                <div class="input-field col l8 offset-l2">
+                  <textarea class="materialize-textarea" name="message" id="user_message"></textarea>
+                  <label for="user_message">Tell us about your idea *</label>
+                </div>
+              </div>
+
+              <div class="row">
+                <div class="col l8 offset-l2">
+                  <label class="pull-left">
+                    <input type="checkbox" name="gdpr_check"  />
+                    <span>I gree to GDPR stuff</span>
+                  </label>
+
+                  <button class="btn waves-effect waves-light pull-right" type="submit" name="action">Submit
+                    <i class="fas fa-arrow-right"></i>
+                  </button>
+                </div>
+              </div>
+            </form>
+          </section>
+        </div>
+    </div>
   </div>
-  <footer>
+  <footer class="container">
     <div class="contact_details">
       <p>Come by to have a chat. Coffee is on us! <i class="fa fa-coffee"></i></p>
       <p>
@@ -144,4 +218,6 @@
     </div>
   </footer>
 </body>
+
+<script src="js/common.js"></script>
 </html>

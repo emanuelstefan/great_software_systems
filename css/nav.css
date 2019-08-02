@@ -3,20 +3,21 @@ nav{
   display: block;
   border-bottom: solid 1px #D8C3A5;
   padding-bottom: 10px;
+  background-color: transparent;
+  box-shadow: none;
 }
 
-nav a{
+nav ul a{
   font-family: 'Roboto', sans-serif;
   font-size: 16px;
   font-weight: 100;
   color: #8E8D8A;
   text-decoration: none;
   text-transform: uppercase;
-  margin: 10px 20px;
-  padding: 5px 10px;
   -webkit-border-radius: 5px;
   -moz-border-radius: 5px;
   border-radius: 5px;
+  color: #8E8D8A;
 }
 
 nav a:hover{

@@ -14,7 +14,6 @@ body{
 }
 
 .main_container{
-  width: 80%;
   margin: 0 auto;
   background-color: white;
   padding: 10px 20px;
@@ -26,7 +25,22 @@ h1, h2, h3{
   color: #E85A4F;
 }
 
-
 .pull-right{
   float: right;
+}
+
+.pull-left{
+  float: left;
+}
+
+.row{
+  margin-bottom: 0;
+}
+
+.centered{
+  margin: 0 auto;
+}
+
+.text_centered{
+  text-align: center;
 }

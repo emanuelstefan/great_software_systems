@@ -5,14 +5,13 @@
 .product_card{
   display: inline-block;
   word-wrap: break-word;
-  width: 30%;
   border: solid 1px lightgrey;
-  margin: 10px;
   border-radius: 5px;
   font-family: 'Roboto', sans-serif;
   font-weight: 200;
   opacity: .7;
   overflow: hidden;
+  height: 385px;
 }
 
 .product_card .title{

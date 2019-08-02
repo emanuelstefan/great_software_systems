@@ -6,6 +6,12 @@
   <meta name="author" content="Manu">
   <title>GreatCodeSystem</title>
 
+  <!-- Compiled and minified CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
+  <!-- Compiled and minified JavaScript -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
   <link rel="stylesheet" type="text/css" href="css/nav.css">
   <link rel="stylesheet" type="text/css" href="css/main.css">
   <link rel="stylesheet" type="text/css" href="css/footer.css">
@@ -14,32 +20,79 @@
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
 </head>
 <body>
-  <div class="main_container">
-    <nav>
-      <a href="index.html">Home</a>
-      <a href="projects.html">Projects</a>
-      <a href="contact.html">Contact</a>
-    </nav>
-
-    <h1>We would love to hear from you</h1>
-
-    <section class="contact_form default_form">
-      <form class="" action="" method="post">
-        <input type="text" name="user_name" placeholder="Your name">
-        <input type="text" name="user_email" placeholder="Email">
-        <input type="text" name="user_phone" placeholder="Phone">
-        <textarea name="message" placeholder="Message"></textarea>
-
-        <div class="actions">
-          <input type="checkbox" name="gdpr_check" value="">
-          <label for="gdpr_check">I gree to GDPR stuff</label>
-          <input class="pull-right" type="submit" name="" value="Send">
+  <div class="container">
+    <div class="main_container">
+      <nav>
+        <div class="nav-wrapper">
+          <a href="#" data-target="mobile-demo" class="sidenav-trigger">
+            <i class="material-icons">menu</i>
+          </a>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
         </div>
-      </form>
-    </section>
+      </nav>
+
+      <ul class="sidenav" id="mobile-demo">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+
+      <h1>We would love to hear from you</h1>
+
+      <section class="default_form text_centered">
+        <div class="row">
+          <p>
+            We would like to hear about your idea. Each detail is useful, but some fields below are mandatory :).
+          </p>
+        </div>
+        <form action="" method="post">
+          <div class="row">
+            <div class="input-field col l8 offset-l2">
+              <input class="autocomplete" type="text" name="user_name" id="user_name">
+              <label for="user_name">Your name *</label>
+            </div>
+          </div>
+          <div class="row">
+            <div class="input-field col l8 offset-l2">
+              <input class="autocomplete" type="text" name="user_email" id="user_email">
+              <label for="user_email">Your email *</label>
+            </div>
+          </div>
+          <div class="row">
+            <div class="input-field col l8 offset-l2">
+              <input class="autocomplete" type="text" name="user_phone" id="user_phone">
+              <label for="user_phone">Your phone number *</label>
+            </div>
+          </div>
+          <div class="row">
+            <div class="input-field col l8 offset-l2">
+              <textarea class="materialize-textarea" name="message" id="user_message"></textarea>
+              <label for="user_message">Tell us about your idea *</label>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col l8 offset-l2">
+              <label class="pull-left">
+                <input type="checkbox" name="gdpr_check"  />
+                <span>I gree to GDPR stuff</span>
+              </label>
+
+              <button class="btn waves-effect waves-light pull-right" type="submit" name="action">Submit
+                <i class="fas fa-arrow-right"></i>
+              </button>
+            </div>
+          </div>
+        </form>
+      </section>
+    </div>
   </div>
-  <footer>
-    <div class="contact_details">
+  <footer class="container">
+    <div class="container contact_details">
       <p>Come by to have a chat. Coffee is on us! <i class="fa fa-coffee"></i></p>
       <p>
         +22 (012) 345 678 93
@@ -83,4 +136,5 @@
     </div>
   </footer>
 </body>
+<script src="js/common.js"></script>
 </html>
